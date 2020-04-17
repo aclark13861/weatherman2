@@ -23,7 +23,7 @@ export default class ProfilePage extends Component {
     e.preventDefault();
     const city = e.target.elements.city.value;
     const country = e.target.elements.country.value;
-    const api_call =  await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appidid=524901&APPID=e24a337d0df8daa5d6d6d703af26b792&units=imperial`);
+    const api_call =  await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appidid=524901&APPID=e24a337d0df8daa5d6d6d703af26b792&units=imperial`);
     const data = await api_call.json();
     console.log(data);
       if(city && country) {

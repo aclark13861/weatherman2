@@ -5,7 +5,7 @@ body {
 }
 button {
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 5px;
   font-size: 0.75rem;
   font-weight: bold;
   padding: 0.75em;
@@ -42,12 +42,9 @@ button {
     border-bottom: 1px solid grey;
     font-size: 0.85rem;
     padding: 0.25rem 0;
-    width: 99%;
+    width: 100%;
 
 }
-  textarea {
-    font-style: italic;
-  }
 
 .comment-count {
   color: gray;
@@ -75,5 +72,15 @@ button {
   .comment-footer-delete:hover {
     color: blue;
     font-weight: bold;
+  }
+
+  button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
   }
 

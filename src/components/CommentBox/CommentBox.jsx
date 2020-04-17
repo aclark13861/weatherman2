@@ -1,4 +1,5 @@
 import React from 'react';
+import './CommentBox.css';
 
 export default class CommentBox extends React.Component {
     constructor() {
@@ -103,13 +104,12 @@ export default class CommentBox extends React.Component {
           <p className="comment-header">{this.props.author}</p>
           <p className="comment-body">- {this.props.body}</p>
           <div className="comment-footer">
-            <a href="#" className="comment-footer-delete" onClick={this._deleteComment}>Delete Comment</a>
+            <button className="comment-footer-delete" onClick={this._deleteComment}>Delete Comment</button>
           </div>
         </div>
       );
     }
     _deleteComment() {
-        
     }
 }
   
