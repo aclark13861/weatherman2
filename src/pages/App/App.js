@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Route, Switch, NavLink } from 'react-router-dom';
+import { Route, Switch, NavLink, Redirect } from 'react-router-dom';
 import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
 import ProfilePage from '../../pages/profilePage/profilePage'
@@ -43,10 +43,13 @@ render() {
         </header>
         <Switch>
         <Route exact path='/profile' render={props => 
+          userService.getUser() ? 
             <ProfilePage
           {...props}
           getWeather = { this.getWeather }
             />
+            :
+            <Redirect to='/login' />
           }/>
           <Route exact path='/signup' render={({ history }) => 
             <SignupPage
