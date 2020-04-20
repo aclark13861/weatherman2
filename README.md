@@ -1,7 +1,7 @@
 # Weatherman
 
 ## Screenshots
-![Screenshot](screenshot.png)
+![Screenshot](arc/images/screenshot.png)
 
 ## Technologies Used
 * React
