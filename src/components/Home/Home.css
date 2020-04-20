@@ -1,4 +1,4 @@
-.grey-bg{
+/* .grey-bg{
     position: absolute;
     height: 100%;
     width: 100%;
@@ -6,10 +6,14 @@
     z-index: -10;
     top: 0;
     left: 0;
-}
+} */
 
 .comment-box {
     position: absolute;
-    left: 38%;
+    left: 38.7%;
     z-index: 200;
+}
+
+h3 {
+    left: 80%;
 }

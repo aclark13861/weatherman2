@@ -1,7 +1,7 @@
 # Weatherman
 
 ## Screenshots
-<!-- i will add screenshots when my styling is better. -->
+![Screenshot](screenshot.png)
 
 ## Technologies Used
 * React

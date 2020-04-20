@@ -6,19 +6,19 @@ const NavBar = (props) => {
     let nav = props.user ?
     <div>
       &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-      <Link to='' className='NavBar-link' onClick={props.handleLogout}>LOG OUT</Link>
+      <Link to='' className='badge badge-primary' onClick={props.handleLogout}>LOG OUT</Link>
       &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-      <Link to='/profile' className='Navbar-link'>PROFILE</Link>
+      <Link to='/profile' className='badge badge-primary'>PROFILE</Link>
       &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-      <Link to='/' className='NavBar-Link'>HOME</Link>
+      <Link to='/' className='badge badge-primary'>HOME</Link>
       &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-      <span className='NavBar-welcome'>WELCOME, {props.user.name}</span>
+      <span className='badge badge-primary'>WELCOME, {props.user.name}</span>
     </div>
     :
     <div>
-      <Link to='/login' className='NavBar-link'>LOG IN</Link>
+      <Link to='/login' className='badge badge-primary'>LOG IN</Link>
       &nbsp;&nbsp;|&nbsp;&nbsp;
-      <Link to='/signup' className='NavBar-link'>SIGN UP</Link>
+      <Link to='/signup' className='badge badge-primary'>SIGN UP</Link>
     </div>;
    
     

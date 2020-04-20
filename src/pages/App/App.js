@@ -10,6 +10,7 @@ import Home from '../../components/Home/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "weather-icons/css/weather-icons.css";
 
+
 class App extends Component {
   constructor(props) {
     super(props);
