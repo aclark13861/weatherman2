@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Route, Switch, NavLink, Redirect } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
 import ProfilePage from '../../pages/profilePage/profilePage'
 import userService from '../../utils/userService';
 import NavBar from '../../components/NavBar/NavBar';
-import Form from '../../components/form/form';
-import Weather from '../../components/weather/weather';
 import Home from '../../components/Home/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "weather-icons/css/weather-icons.css";

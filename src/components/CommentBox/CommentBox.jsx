@@ -35,7 +35,7 @@ export default class CommentBox extends React.Component {
           {commentNodes}
         </div>  
       );
-    } // end render
+    }
     
     _addComment(author, body) {
       const comment = {
@@ -43,7 +43,7 @@ export default class CommentBox extends React.Component {
         author,
         body
       };
-      this.setState({ comments: this.state.comments.concat([comment]) }); // *new array references help React stay fast, so concat works better than push here.
+      this.setState({ comments: this.state.comments.concat([comment]) });
     }
     
     _handleClick() {
@@ -72,7 +72,7 @@ export default class CommentBox extends React.Component {
         return `${commentCount} comments`;
       }
     }
-  } // end CommentBox component
+  }
   
   class CommentForm extends React.Component {
     render() {
@@ -87,15 +87,15 @@ export default class CommentBox extends React.Component {
           </div>
         </form>
       );
-    } // end render
+    }
     
     _handleSubmit(event) { 
-      event.preventDefault();   // prevents page from reloading on submit
+      event.preventDefault();
       let author = this._author;
       let body = this._body;
       this.props.addComment(author.value, body.value);
     }
-  } // end CommentForm component
+  }
   
   class Comment extends React.Component {
     render () {
@@ -103,13 +103,8 @@ export default class CommentBox extends React.Component {
         <div className="comment">
           <p className="comment-header">{this.props.author}</p>
           <p className="comment-body">- {this.props.body}</p>
-          <div className="comment-footer">
-            <button className="comment-footer-delete" onClick={this._deleteComment}>Delete Comment</button>
-          </div>
         </div>
       );
-    }
-    _deleteComment() {
     }
 }
   

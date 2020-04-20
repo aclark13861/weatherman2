@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link, Route } from 'react-router-dom';
-import ProfilePage from '../../pages/profilePage/profilePage'
+import { Link } from 'react-router-dom';
 
 
 const NavBar = (props) => {
