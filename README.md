@@ -9,6 +9,7 @@
 * MongoDB
 * Mongoose
 * Heroku
+* OpenWeatherAPI
 
 ## Getting Started
 [Heroku](https://weatherman2.herokuapp.com/)
